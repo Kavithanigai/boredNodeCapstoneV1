@@ -1,0 +1,681 @@
+
+/* ======== BASIC SETUP ======= */
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html{
+  color: #555;
+  font-family: 'Comfortaa','Lato',sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+
+/* ======== REUSABLE COMPONENTS ======= */
+.row{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* ======== HEADINGS ======= */
+h1,h2,h3{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h1{
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 120%;
+  word-spacing: 4px;
+  margin-left: 0;
+}
+
+h2{
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding-top: 20px;
+  font-size: 110%;
+  word-spacing: 2px;
+  text-align: center;
+}
+
+h2:after{
+  display: block;
+  height: 2px;
+  background-color: #DBD5A4;
+  content: "";
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+h3{
+  font-size: 90%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+/* ======== PARAGRAPHS ======= */
+.features{
+  background-color:#f4f4f4;
+}
+
+.long-copy{
+  line-height: 140%;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  font-size: 90%;
+}
+
+.box p{
+  font-size: 80%;
+  line-height: 3px;
+}
+
+.categories{
+  border: 2px solid #DBD5A4;
+  height:120%;
+  text-align: center;
+  background-color: #fff;
+}
+
+.categories-names{
+  background-color: #f8f7ed;
+  margin-top: -10px;
+  padding-bottom: 5px;
+}
+
+.categories p{
+  padding: 20px 0;
+  font-size: 90%;
+}
+
+.categories li{
+   list-style: none;
+}
+.categories-names i{
+  padding-top: 10px;
+}
+
+
+
+/* ======== ICONS ======= */
+.icon-big{
+  font-size: 250%;
+  display: block;
+  color: #DBD5A4;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+/* ======== BUTTONS ======= */
+.btn:link, .btn:visited{
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: 300;
+  font-size: 80%;
+  text-decoration: none;
+  border-radius: 10px;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+/* #c0c0aa */
+.btn-full:link, .btn-full:visited{
+  background-color: #DBD5A4;
+  border: 1px solid #DBD5A4;
+  color: #555;
+  margin-right: 10px;
+}
+
+.btn-ghost:link, .btn-ghost:visited{
+  border: 1px solid #DBD5A4;
+  color: #DBD5A4;
+}
+
+.btn:hover,
+.btn:active{
+  background-color: #cdc47f;
+}
+
+.btn-full:hover, .btn-full:active{
+  border: 1px solid #cdc47f;
+}
+
+.btn-ghost:hover, .btn-ghost:active{
+  border: 1px solid #cdc47f;
+  color: #555;
+}
+
+/* ======== HEADER ======= */
+header{
+  background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.3)),to(rgba(0, 0, 0, 0.3))),url(../img/boredHeroImage.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(../img/boredHeroImage.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.hero-text-box{
+  position: absolute;
+  width: 1140px;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.logo{
+  height: 150px;
+  width: auto;
+  float: left;
+  margin-top: -25px;
+}
+
+.logo-black{
+  display: none;
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: -20px;
+  margin-bottom: -30px;
+}
+
+/* ======== Main Nav ======= */
+/*.nav-main-menu{
+  position: relative;
+}*/
+
+.main-nav{
+  float: right;
+  list-style: none;
+  margin-top: 40px;
+}
+
+.main-nav li{
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 80%;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+  padding: 5px 0;
+}
+
+/*
+.user-nav{
+   position: absolute;
+   top: 40px;
+   right: 5%;
+}
+*/
+.main-nav li a:hover,
+.main-nav li a:active{
+  border-bottom: 2px solid #DBD5A4;
+}
+
+/* ======== mobile Nav ======= */
+
+.mobile-nav-icon{
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+.mobile-nav-icon i{
+  font-size: 200%;
+  color: #fff;
+}
+
+/* ======== Sticky Nav ======= */
+.sticky{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.98);
+  -webkit-box-shadow: 0 2px 2px #efefef;
+          box-shadow: 0 2px 2px #efefef;
+  z-index: 9999;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+  padding: 7px 0;
+  color: #555;
+}
+
+.sticky .main-nav{
+  margin-top: 15px;
+}
+
+.sticky .logo{
+  display: none;
+}
+.sticky .logo-black{
+  display: block;
+}
+
+/* ======== HOW IT WORS ======= */
+.section-steps{
+  background-color: #f4f4f4;
+}
+.steps-box{
+  margin-top:  50px;
+}
+
+.steps-box:first-child{
+  text-align: right;
+  padding-right: 3%;
+}
+
+.steps-box:last-child{
+  padding-left:3%;
+}
+
+.app-screen{
+  width: 80%;
+  height: auto;
+  margin-top: -19%;
+}
+
+.works-step{
+  margin-bottom: 30px;
+}
+
+.works-step:last-of-type{
+  margin-bottom: 35px;
+}
+
+.works-step div{
+  color: #000;
+  border: 2px solid #DBD5A4;
+  display: inline-block;
+  border-radius: 50px;
+  height:30px;
+  width: 30px;
+  text-align: center;
+  padding: 5px;
+  float: left;
+  font-size: 80%;
+  margin-right: 10px;
+}
+
+.works-step p{
+  font-size: 85%;
+}
+
+.btn-app img{
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}
+
+/* ======== FOOTER ROW ======= */
+.footer-row{
+  background-color: #f8f7ed;
+  width: 140%;
+  height: 30px;
+}
+
+.footer-row p{
+  font-size: 60%;;
+  float: left;
+  margin-top: 10px;
+}
+
+/* ======== ANIMATIONS ======= */
+
+.js--wp-1,.js--wp-2{
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+.js--wp-1.animated,.js--wp-2.animated{
+  opacity: 1;
+}
+
+/* ======== RIDDLES ======= */
+
+.riddlePost{
+  width: 40%;
+  height: 30%;
+  background-color: rgba(219,213,164, 0.7);
+  color: #fff;
+  top: 40%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  text-align: center;
+}
+
+.riddlePost h2{
+  font-size: 150%;
+  font-weight: 300;
+}
+
+
+.riddlePost p{
+  font-size: 110%;
+  line-spacing: 1px;
+  line-height: 1.8;
+  padding-bottom: 15px;
+  font-weight: 300;
+}
+
+.riddleAddBtn{
+  width: 40%;
+  border: none;
+  height: 40px;
+  outline: none;
+  background-color: #817e6c;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+/* ======== LOGIN FORM ======= */
+.login-box, .reg-box{
+  background-color: rgba(219,213,164, 0.7);
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+.login-box{
+  width: 320px;
+  height: auto;
+}
+
+.reg-box{
+  width: 380px;
+  height: auto;
+  top: 55%;
+}
+
+.avatarLogo{
+  width: 55px;
+  height: 55px;
+  background-color: #817e6c;
+  border-radius: 100px;
+  position: absolute;
+  top: -40px;
+  font-size: 50px;
+  margin-top: 60px;
+  margin-left: 105px;
+  text-align: center;
+}
+
+.reg-box .avatarLogo{
+  margin-left: 135px;
+}
+
+.login-box h2,.reg-box h2{
+  text-align: center;
+  margin-top: 8%;
+  font-weight: 350;
+  font-size: 22px;
+}
+
+.login-box h2:after, .reg-box h2:after{
+ display: none;
+}
+
+.form-label{
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+.form-control, .form-control-textarea{
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 3px solid #817e6c;
+  background: transparent;
+  outline: none;
+/*  height: 40px;*/
+  color: #fff;
+  font-size: 16px;
+}
+
+.form-control{
+    height: 40px;
+}
+
+.reg-box .form-control{
+  margin-bottom: 10px;
+}
+
+.loginBtn,.regBtn{
+  width: 100%;
+  border: none;
+  height: 40px;
+  outline: none;
+  background-color: #817e6c;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.loginBtn{
+  margin-top: 10px;
+}
+.loginPswd{
+  margin-bottom: 10px;
+}
+
+.login-box p a, .reg-box p a{
+  margin-top: -10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  font-size: 80%;
+  padding-bottom: 10px;
+  color: #0000ff;
+  outline: none;
+}
+
+.signupPar, .loginPar{
+  text-align: center;
+  margin: 10px auto 15px auto;
+}
+
+
+.signupLink, .loginLink{
+  text-decoration: none;
+  padding-bottom: 15px;
+  color: #0000ff;
+  outline: none;
+  font-size: 100%;
+  font-size: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.form-control-password{
+  margin-bottom: 0;
+}
+
+.resetPswdLink{
+  margin-bottom:10px;
+}
+.login-close{
+  float: right;
+  background-color: #000;
+  margin-top: 10px;
+  font-size: 120%;
+}
+
+/* ======== ADD RIDDLES ======= */
+/*
+.addRiddles{
+  background-color: rgba(219,213,164, 0.7);
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+
+  width: 50%;
+  height: 30%;
+}
+
+.addRiddles h2{
+  text-align: center;
+  margin-top: 5%;
+  font-weight: 350;
+  font-size: 20px;
+}
+
+.addRiddles p{
+  text-align: center;
+}
+.addRiddles a{
+  text-decoration: none;
+}
+*/
+
+.expRiddlesBtn, .addRiddlesBtn, .expGamesBtn, .addGamesBtn,
+.expCraftsBtn, .addCraftsBtn, .addNewRiddleSection button, .delRiddlesBtn,.editRiddlesBtn{
+  width: 40%;
+  border: none;
+  height: 40px;
+  outline: none;
+  background-color: #817e6c;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 20px 30% auto 30%;
+}
+
+.addRiddlesBtn, .addGamesBtn,
+.addCraftsBtn, .addNewRiddleSection button{
+  margin-bottom: 20px;
+
+}
+
+/* ======== ADD RIDDLES - HTML ======= */
+
+.addNewRiddleSection{
+  width: 70%;
+  height: auto;
+  background-color: rgba(219,213,164, 0.7);
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+.addNewRiddleSection h2{
+  margin-top: 10px;
+}
+
+.addNewRiddleSection .form-label{
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 120%;
+}
+
+.addNewRiddleSection .form-control{
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  border: 2px solid #817e6c;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+  height: 40px;
+}
+
+
+.closeAddRiddles{
+  position: relative;
+  float: right;
+  /*display: inline-block;*/
+  margin-top: -40px;
+  background-color: #fff;
+  font-size: 120%;
+  border: 3px solid #fff;
+}
+
+.form-control-textarea{
+   height: 80px;
+}
+/* ======== DISPLAY RIDDLES  ======= */
+#search-results{
+  position: fixed;
+  width: 70%;
+  height: 70%;
+  background-color: rgba(219,213,164, 0.7);
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  /*margin-top: 3%;*/
+  overflow-y: auto;
+}
+
+#search-results p{
+  padding-bottom: 5px;
+  color: #555;
+}
+
+.viewRiddles{
+  margin: 10px auto;
+}
+
+.editRiddlesBtn{
+  text-align: center;
+  margin-top:5px;
+
+}
+.delRiddlesBtn{
+  margin-bottom:5px;
+  margin-top:5px;
+  background-color: #A80000 ;
+}
+
+.alert-danger{
+  background-color: #ffd6d6;
+  position: absolute;
+  top:10%;
+  left:40%;
+}
+
+.alert-success{
+  background-color: #cce5cc;
+  position: absolute;
+  top:10%;
+  left:40%;
+}

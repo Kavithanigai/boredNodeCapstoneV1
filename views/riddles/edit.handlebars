@@ -1,0 +1,24 @@
+
+{{#each errors}}
+  <div class="alert alert-danger">
+  {{text}});
+  </div>
+{{else}}
+
+{{/each}}
+
+<div class="card card-body addNewRiddleSection">
+  <h3>Edit Riddle</h3>
+  <form action="/riddles/{{riddle.id}}?_method=PUT" method="post">
+    <input type="hidden" name="_method" value="PUT">
+    <div class="form-group">
+      <label for="question">Riddle</label>
+      <textarea class="form-control" name="question" required>{{riddle.question}}</textarea>
+    </div>
+    <div class="form-group">
+      <label for="answer">Answer</label>
+      <input type="text" class="form-control" name="answer" value="{{riddle.answer}}" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

@@ -1,0 +1,216 @@
+
+/* ======== BIG TAB TO IPADS IN LANDSCAPE MODE AND SMALL COMPUTERS(0-1200px) ======= */
+@media only screen and (max-width: 1200px){
+  .hero-text-box{
+        width: 100%;
+        padding: 0 2%;
+  }
+  .row{
+      padding: 0 2%;
+  }
+  .addNewRiddleSection h2{
+    margin-top: 10px;
+  }
+  .login-box h2,.reg-box h2{
+    margin-top: 35%;
+  }
+  .regBtn{
+    margin-bottom: 25px;
+  }
+}
+
+/* ======== SMALL TAB TO IPADS IN PORTRAIT MODE(0-1023px) ======= */
+@media only screen and (max-width: 1023px){
+  body{
+      font-size: 16px;
+  }
+  section{
+      padding: 60px 0;
+  }
+  h2:after{
+      width: 50%;
+  }
+  .main-nav li{
+      margin-left: 30px;
+  }
+  .steps-box{
+      padding-left: 0;
+  }
+  .footer-row p{
+    margin-left: 10px;
+  }
+  header{
+    background-position: 5% 25%;
+  }
+  .addNewRiddleSection h2{
+    margin-top: 20px;
+  }
+
+  .login-box h2,.reg-box h2{
+    margin-top: 30%;
+    font-size: 18px;
+  }
+  .regBtn{
+    margin-bottom: 25px;
+  }
+
+  .signupPar, .loginPar{
+    text-align: center;
+    margin: 5px auto 15px auto;
+  }
+  .editRiddlesBtn:link, .editRiddlesBtn:visited {
+    font-size: 110%;
+    font-weight: 400;
+  }
+
+
+}
+
+  /* ======== BIGGER PHONES & SMALL TABLETS-IPAD(0-767px) ======= */
+  @media only screen and (max-width: 767px){
+    body{
+        font-size: 14px;
+    }
+    section{
+        padding: 30px 0;
+    }
+    .col{
+      width: 100%;
+      margin: 0 0 4% 0;
+    }
+    .row,.hero-text-box{
+        padding: 0 4%;
+    }
+    .col{
+      width: 100%;
+    }
+    .hero-text-box h1,.btn-full{
+       margin-left: 4%;
+    }
+    .hero-text-box h1{
+      font-size: 90%;
+    }
+    h2{
+      font-size: 100%;
+      padding-top:5px;
+      font-weight: bold;
+    }
+    h2:after{
+        width: 90%;
+        margin-bottom: 1.5%;
+    }
+    .long-copy{
+      margin-bottom:7%;
+    }
+    .main-nav{
+      display: none;
+    }
+
+    .mobile-nav-icon{
+      display: inline-block;
+    }
+
+    .main-nav{
+      float: left;
+      margin-top: 30px;
+    }
+    /*
+    .js .main-nav .menu {
+    display: block !important;
+    }*/
+     .main-nav li{
+       display: block;
+     }
+
+     .main-nav li a:link,
+     .main-nav li a:visited{
+       display: block;
+       border:0;
+       padding: 10px 0;
+       font-size: 100%;
+     }
+
+     .sticky .main-nav li a:link,
+     .sticky .main-nav li a:visited{
+       padding: 10px 0;
+      }
+
+     .sticky .main-nav{
+       margin-top: 10px;
+     }
+
+     .sticky .mobile-nav-icon{
+       margin-top: 10px;
+     }
+
+     .sticky .mobile-nav-icon i{
+       color: #555;
+     }
+
+    .features, .section-steps{
+      padding-top: 7%;
+    }
+
+    .app-screen{
+       margin-right:7%;
+       margin-top: -40px;
+       width: 80%;
+    }
+    .steps-box:last-child{
+
+      margin: -40px auto 0 auto;
+    }
+    header{
+      background-position: 25% 50%;
+    }
+
+    .login-box h2,.reg-box h2{
+      margin-top: 30%;
+      font-size: 18px;
+    }
+    .regBtn{
+      margin-bottom: 25px;
+    }
+    .signupPar{
+       margin: 5px auto 15px auto;
+    }
+
+    .loginPar{
+       margin: -8px auto 15px auto;
+    }
+
+    .editRiddlesBtn:link, .editRiddlesBtn:visited {
+      font-size: 110%;
+      font-weight: 400;
+    }
+  }
+
+  /* ======== SMALL PHONES(0-480px) ======= */
+  @media only screen and (max-width: 480px){
+    header{
+      background-position: 25% 50%;
+    }
+
+    .login-box h2,.reg-box h2{
+      margin-top: 30%;
+      font-size: 18px;
+    }
+
+    .regBtn{
+      margin-bottom: 25px;
+    }
+
+    .signupPar{
+       margin: 5px auto 15px auto;
+    }
+
+    .loginPar{
+       margin: -8px auto 15px auto;
+    }
+    .editRiddlesBtn:link, .editRiddlesBtn:visited {
+      font-size: 110%;
+      font-weight: 400;
+    }
+
+
+  }

@@ -1,0 +1,43 @@
+
+<!--
+<section class="login js--section-login"
+  <div class="row">
+    <div class="card card-body">
+      <img class="miniLogo" src="/img/logoBoldMyStyle.png">
+      <h3 class="text-center">Account Login</h3>
+      <form action="/users/login" method="post">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+-->
+
+     <section id="login-page">
+          <div class="row login-box" id="login">
+            <i class="icon ion-md-person avatarLogo"></i>
+            <form id="login-form" class="login-register-form" action="/users/login" method="post">
+              <h2>Account Login</h2>
+              <span class="alert"></span>
+                 <div class="form-group">
+                    <label for="email" class="form-label">Email</label><br>
+                    <input type="email" name="email" class="form-control" placeholder="Enter Username" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="password" class="form-label loginPswd">Password</label><br>
+                    <input type="password" name="password" class="form-control form-control-password" placeholder="Enter Password" required>
+                  </div>
+                  <!--<p class="resetPswdLink"><a href="#">Reset Password</a></p>-->
+                  <button type="submit" class="btn btn-primary loginBtn">Submit</button>
+                  <p class="signupPar">Not Registered Yet? <a href="/users/register"  class="js-reg-signupLink register-trigger link signupLink">SignUp Now!</a></p>
+            </form>
+        </div>
+      </section>

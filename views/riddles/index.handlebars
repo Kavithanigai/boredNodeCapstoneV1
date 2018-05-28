@@ -1,0 +1,18 @@
+
+<div id="search-results">
+  <h4>RIDDLES<h4>
+{{#each riddles}}
+  <div class="viewRiddles" >
+    <h4><p>Question:</p>{{question}}</h4>
+    <h4><p>Answer:</p>{{answer}}</h4>
+    <a class="btn btn-primary editRiddlesBtn" href="/riddles/edit/{{id}}">Edit</a>
+    <form method="post" action="/riddles/{{id}}?_method=DELETE">
+      <input type="hidden" name="_method" value="DELETE">
+      <input type="submit" class="btn btn-primary delRiddlesBtn" value="Delete">
+    </form>
+   <hr>
+  </div>
+{{else}}
+  <p>No riddles listed</p>
+{{/each}}
+</div>

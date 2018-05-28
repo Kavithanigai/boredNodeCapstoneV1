@@ -1,0 +1,22 @@
+<nav role="navigation">
+  <div class="row nav-main-menu">
+    <img src="/img/logoWhiteBoldMyStyle.png" alt="KTECH LOGO" class="logo">
+    <img src="/img/logoBoldMyStyle.png" alt="KTECH LOGO" class="logo-black">
+      <ul class="main-nav js--main-nav">
+          <li ><a class="nav-menu" href="/">HOME</a></li>
+<!--If User Logged in -->
+        {{#if user}}
+        <li><a href="/riddles" class="nav-menu">Riddles</a></li>
+        <li><a href="/riddles/add" class="nav-menu">Add Riddles</a></li>
+        <li><a href="/users/logout" class="nav-menu js--logout">Logout</a></li>
+        {{else}}
+        <li><a href="#categories" class="nav-menu">CATEGORIES</a></li>
+        <li><a href="#works" class="nav-menu">HOW IT WORKS</a></li>
+          <li><a href="/users/login" class="nav-menu js--login-menu">Login</a></li>
+          <li><a href="/users/register" class="nav-menu js--reg-menu">Register</a></li>
+        {{/if}}
+      </ul>
+        <a class="mobile-nav-icon js--mobilenav-icon"><i class="icon ion-md-menu"></i></a>
+    </div>
+  </div>
+</nav>
