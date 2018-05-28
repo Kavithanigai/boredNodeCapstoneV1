@@ -1,13 +1,13 @@
 {
-  "name": "vidjot",
+  "name": "BoredNodeCapstonev1",
   "version": "1.0.0",
-  "description": "App to create video ideas",
+  "description": "Bored App",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
-  "author": "Brad Traversy",
-  "license": "MIT",
+  "author": "KT",
+  "license": "KTTECH",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
