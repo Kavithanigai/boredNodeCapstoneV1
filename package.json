@@ -1,13 +1,14 @@
 {
-  "name": "vidjot",
+  "name": "boredNodeCapstonev1",
   "version": "1.0.0",
-  "description": "App to create video ideas",
+  "description": "Bored App",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "mocha --exit"
   },
-  "author": "Brad Traversy",
-  "license": "MIT",
+  "author": "KT",
+  "license": "KTTECH",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
@@ -20,5 +21,11 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "uuid": "^3.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "faker": "^4.1.0",
+    "mocha": "^5.2.0"
   }
 }

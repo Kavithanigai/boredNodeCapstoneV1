@@ -191,9 +191,6 @@ header{
 }
 
 /* ======== Main Nav ======= */
-/*.nav-main-menu{
-  position: relative;
-}*/
 
 .main-nav{
   float: right;
@@ -218,13 +215,6 @@ header{
   padding: 5px 0;
 }
 
-/*
-.user-nav{
-   position: absolute;
-   top: 40px;
-   right: 5%;
-}
-*/
 .main-nav li a:hover,
 .main-nav li a:active{
   border-bottom: 2px solid #DBD5A4;
@@ -530,34 +520,6 @@ header{
 }
 
 /* ======== ADD RIDDLES ======= */
-/*
-.addRiddles{
-  background-color: rgba(219,213,164, 0.7);
-  color: #fff;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%,-50%);
-  box-sizing: border-box;
-
-  width: 50%;
-  height: 30%;
-}
-
-.addRiddles h2{
-  text-align: center;
-  margin-top: 5%;
-  font-weight: 350;
-  font-size: 20px;
-}
-
-.addRiddles p{
-  text-align: center;
-}
-.addRiddles a{
-  text-decoration: none;
-}
-*/
 
 .expRiddlesBtn, .addRiddlesBtn, .expGamesBtn, .addGamesBtn,
 .expCraftsBtn, .addCraftsBtn, .addNewRiddleSection button, .delRiddlesBtn,.editRiddlesBtn{

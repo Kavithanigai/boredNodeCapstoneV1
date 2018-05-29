@@ -10,7 +10,6 @@ const Riddle = mongoose.model('riddles');
 // Riddle Index Page
 router.get('/', ensureAuthenticated, (req, res) => {
   Riddle.find({user:req.user.id})
-    .sort({date:'desc'})
     .then(riddles => {
       res.render('riddles/index', {
         riddles:riddles
@@ -90,7 +89,7 @@ router.put('/:id', ensureAuthenticated, (req, res) => {
   });
 });
 
-// Delete Idea
+// Delete Riddle
 router.delete('/:id',ensureAuthenticated, (req, res) => {
   Riddle.remove({_id: req.params.id})
     .then(() => {
