@@ -67,13 +67,15 @@ describe('Riddles API', function(){
 				.then(function(res){
 					expect(res).to.have.status(200)
 					newUser._id = res.body._id
+					newUser.email = res.body.email
+					newUser.password= res.body.password
 				}, err=>console.log('errormessage', err.message))
 		})
 		it('should sign in', function(){
 			return agent.post('/users/login')
-				.send({email:newUser.email,
-				 password: newUser.password
-			 })
+				.send({
+					email: newUser.email,
+				   password: newUser.password})
 				.then(function(res){
 					expect(res).to.have.status(200);
            expect('Location', '/riddles');
