@@ -75,7 +75,9 @@ describe('Riddles API', function(){
 				.send(newUser)
 				.then(function(res){
 					expect(res).to.have.status(200);
-          expect('Location', '/riddles');
+					console.dir(res);
+					expect(res).to.have.header('content-length', 3439);
+         expect('Location', '/riddles');
 				})
 		})
 
@@ -88,7 +90,7 @@ describe('Riddles API', function(){
          })
 				.then(function(res){
 					expect(res).to.have.status(200);
-          console.dir(res);
+          //console.dir(res);
           expect(res).to.have.header('content-length', 3443);
 					//expect(res).to.be.json;
 					//riddle = res.body.riddles[0];
