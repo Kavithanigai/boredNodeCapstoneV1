@@ -80,12 +80,6 @@ app.get('/about', (req, res) => {
 app.use('/riddles', riddles);
 app.use('/users', users);
 
-/*const port = process.env.PORT || 5000;
-
-app.listen(port, () =>{
-  console.log(`Server started on port ${port}`);
-});
-*/
 
 // both runServer and closeServer need to access the same
 // server object, so we declare `server` here, and then when

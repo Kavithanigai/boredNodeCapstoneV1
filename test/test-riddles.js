@@ -74,9 +74,7 @@ describe('Riddles API', function(){
 				.send(newUser)
 				.then(function(res){
 					expect(res).to.have.status(200);
-					console.dir(res);
-					expect(res).to.have.header('content-length', 3439);
-         expect('Location', '/riddles');
+           expect('Location', '/riddles');
 				})
 		})
 
@@ -89,13 +87,9 @@ describe('Riddles API', function(){
          })
 				.then(function(res){
 					expect(res).to.have.status(200);
-          //console.dir(res);
+          console.dir(res);
           expect(res).to.have.header('content-length', 3443);
-					//expect(res).to.be.json;
-					//riddle = res.body.riddles[0];
           expect('Location', '/riddles');
-        //  expect(res.body).to.include.keys(
-          //   'question', 'answer');
 				})
 		})
 
@@ -106,10 +100,6 @@ describe('Riddles API', function(){
 				.then(function(res){
           expect(res).to.have.status(200);
           expect(res).to.have.header('content-length', 3443);
-          /*
-					const updatedRiddle = res.body.riddles
-					expect(updatedRiddle.question).to.equal('Test Question');
-					expect(updatedRiddle.answer).to.equal('Answer 2');*/
           expect('Location', '/riddles');
 				})
 		})
