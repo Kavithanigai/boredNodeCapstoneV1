@@ -7,6 +7,10 @@ Games and Crafts are reserved for later versions.
 # Live link:
 [Click here for live version of app!](https://pure-gorge-45509.herokuapp.com/)
 
+Test Account:
+Login Email: test@gmail.com
+Login Password: 12345
+
 ## Screen Shots
 ### Home Page
 <img width="1279" alt="screen shot 2018-05-14 at 10 36 00 am" src="https://user-images.githubusercontent.com/33758117/40766069-3bded874-6463-11e8-8a25-dea0e97b9181.png">
@@ -41,7 +45,7 @@ Games and Crafts are reserved for later versions.
 - Express
 - MongoDb
 - Travis for CI
-- Heorku
+- Heroku
 
 
 
