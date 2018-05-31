@@ -8,8 +8,8 @@ Games and Crafts are reserved for later versions.
 [Click here for live version of app!](https://pure-gorge-45509.herokuapp.com/)
 
 Test Account:
-Login Email: test@gmail.com
-Login Password: 12345
+1.Login Email: test@gmail.com
+2.Login Password: 12345
 
 ## Screen Shots
 ### Home Page
