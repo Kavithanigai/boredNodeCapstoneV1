@@ -38,6 +38,12 @@ https://pure-gorge-45509.herokuapp.com/
 - JQuery
 - Ajax
 - Nodejs
+- Express
+- MongoDb
+- Travis for CI
+- Heorku
+
+
 
 ### Author
 Kavitha Thanigaivelan
