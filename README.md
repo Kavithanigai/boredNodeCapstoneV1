@@ -13,7 +13,7 @@ Games and Crafts are reserved for later versions.
 
 ## Screen Shots
 ### Home Page
-<img width="1279" alt="screen shot 2018-05-14 at 10 36 00 am" src="https://user-images.githubusercontent.com/33758117/40766069-3bded874-6463-11e8-8a25-dea0e97b9181.png">
+<img width="1260" alt="screen shot 2018-05-31 at 12 22 42 am" src="https://user-images.githubusercontent.com/33758117/40767957-ce6fa0d8-6468-11e8-8204-225c60f38861.png">
 
 ### Categories Page
 <img width="1278" alt="screen shot 2018-05-30 at 11 36 09 pm" src="https://user-images.githubusercontent.com/33758117/40765914-d34063d2-6462-11e8-82b6-399e0b91d773.png">
