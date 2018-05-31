@@ -71,7 +71,9 @@ describe('Riddles API', function(){
 		})
 		it('should sign in', function(){
 			return agent.post('/users/login')
-				.send(newUser)
+				.send({email:newUser.email,
+				 password: newUser.password
+			 })
 				.then(function(res){
 					expect(res).to.have.status(200);
            expect('Location', '/riddles');
