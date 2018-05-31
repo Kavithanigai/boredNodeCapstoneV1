@@ -5,7 +5,7 @@ App to collect,store,edit and delete riddles, games and crafts.
 Games and Crafts are reserved for later versions.
 
 # Live link:
-https://pure-gorge-45509.herokuapp.com/
+[Click here for live version of app!](https://pure-gorge-45509.herokuapp.com/)
 
 ## Screen Shots
 ### Home Page
