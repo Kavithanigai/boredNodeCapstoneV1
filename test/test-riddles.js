@@ -66,7 +66,6 @@ describe('Riddles API', function(){
 				.send(newUser)
 				.then(function(res){
 					expect(res).to.have.status(200)
-					//expect(res).to.have.cookie('jwt-auth')
 					newUser._id = res.body._id
 				}, err=>console.log('errormessage', err.message))
 		})
