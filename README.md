@@ -1,11 +1,10 @@
-# boredNodeCapstoneV1
-Node Capstone
+
 # KT BORED-RIDDLES APP
 
-App to collect and store,edit,delete riddles, games and crafts.
+App to collect,store,edit and delete riddles, games and crafts.
 Games and Crafts are reserved for later versions.
 
-#Live link:
+# Live link:
 https://pure-gorge-45509.herokuapp.com/
 
 ## Screen Shots
@@ -30,6 +29,8 @@ https://pure-gorge-45509.herokuapp.com/
 
 ### Edit Riddles Page
 <img width="1236" alt="screen shot 2018-05-30 at 11 37 46 pm" src="https://user-images.githubusercontent.com/33758117/40765883-bfb6d29c-6462-11e8-84ff-d6584c9e12b2.png">
+
+
 ## Built With
 - HTML
 - CSS
