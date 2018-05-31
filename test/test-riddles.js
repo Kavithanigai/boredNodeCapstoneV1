@@ -88,7 +88,8 @@ describe('Riddles API', function(){
          })
 				.then(function(res){
 					expect(res).to.have.status(200);
-          console.log(res.body);
+          console.dir(res);
+          expect(res).to.have.header('content-length', 3443);
 					//expect(res).to.be.json;
 					//riddle = res.body.riddles[0];
           expect('Location', '/riddles');
@@ -103,6 +104,7 @@ describe('Riddles API', function(){
 				.send({question: 'Test Question', answer:'Answer 2'})
 				.then(function(res){
           expect(res).to.have.status(200);
+          expect(res).to.have.header('content-length', 3443);
           /*
 					const updatedRiddle = res.body.riddles
 					expect(updatedRiddle.question).to.equal('Test Question');
@@ -115,6 +117,7 @@ describe('Riddles API', function(){
 			return agent.delete(`/:{users.id}`)
 				.send([])
 				.then(function(res){
+          expect(res).to.have.status(404);
           //riddles=res.body;
 					//expect(res.body.riddles.length).to.equal(0);
           expect('Location', '/riddles');
